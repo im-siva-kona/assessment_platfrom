@@ -1,0 +1,195 @@
+/* Help Page Container Styles */
+.container {
+    max-width: 1200px;
+    margin-bottom: -20px;
+  }
+  
+  /* Navigation Section Styles */
+  .section {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+  }
+  
+  .section ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-bottom: 2px solid #f0f0f0;
+  }
+  
+  .section ul li {
+    margin: 0;
+  }
+  
+  .section ul li a {
+    display: block;
+    padding: 15px 25px;
+    color: #555;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border-bottom: 3px solid transparent;
+  }
+  
+  .section ul li a:hover {
+    color: #4CAF50;
+    background-color: rgba(76, 175, 80, 0.1);
+  }
+  
+  .section ul li a.active {
+    color: #4CAF50;
+    border-bottom: 3px solid #4CAF50;
+  }
+  
+  /* Content Section Styles */
+  .content-section {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+    margin: 20px 30px;
+    display: none;
+  }
+  
+  .content-section.active {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .content-section h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eaeaea;
+  }
+  
+  .content-section p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  /* Content Lists Styling */
+  .content-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .content-section ul li {
+    margin-bottom: 25px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 6px;
+    transition: transform 0.2s ease;
+  }
+  
+  .content-section ul li:hover {
+    transform: translateX(5px);
+  }
+  
+  .content-section ul li strong {
+    display: block;
+    color: #2f2f2f;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .content-section ul li p {
+    margin: 10px 0 0;
+    color: #666;
+  }
+  
+  /* Contact Support Section Specific Styles */
+  #contact-support ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  #contact-support ul li strong {
+    min-width: 80px;
+  }
+  
+  #contact-support a {
+    color: #4CAF50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  #contact-support a:hover {
+    color: #45a049;
+    text-decoration: underline;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .section ul {
+      flex-direction: column;
+    }
+  
+    .section ul li a {
+      padding: 12px 15px;
+      text-align: center;
+    }
+  
+    .content-section {
+      padding: 20px;
+    }
+  
+    .content-section ul li {
+      padding: 15px;
+    }
+  
+    #contact-support ul li {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 5px;
+    }
+  }
+  
+  /* Active State for Content Sections */
+  .content-section.active {
+    display: block;
+  }
+  
+  /* Helper Classes */
+  .text-center {
+    text-align: center;
+  }
+  
+  .mb-4 {
+    margin-bottom: 20px;
+  }
+  
+  .font-bold {
+    font-weight: 600;
+  }
+  
+  /* Status Indicators */
+  .status-indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+  
+  .status-online {
+    background-color: #4CAF50;
+  }
+  
+  .status-offline {
+    background-color: #f44336;
+  }
